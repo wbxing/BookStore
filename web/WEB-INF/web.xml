@@ -66,11 +66,11 @@
         <url-pattern>/manager/order</url-pattern>
     </servlet-mapping>
 
+    <!--用户登录过滤-->
     <filter>
         <filter-name>ManagerFilter</filter-name>
         <filter-class>com.bs.filter.ManagerFilter</filter-class>
     </filter>
-
     <filter-mapping>
         <filter-name>ManagerFilter</filter-name>
         <url-pattern>/pages/manager/*</url-pattern>
@@ -78,6 +78,18 @@
         <url-pattern>/manager/*</url-pattern>
     </filter-mapping>
 
+    <!-- 用户权限过滤-->
+    <filter>
+        <filter-name>AuthorityFilter</filter-name>
+        <filter-class>com.bs.filter.AuthorityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthorityFilter</filter-name>
+        <url-pattern>/pages/manager/*</url-pattern>
+        <url-pattern>/manager/*</url-pattern>
+    </filter-mapping>
+
+    <!-- 数据库事务处理-->
     <filter>
         <filter-name>TransactionFilter</filter-name>
         <filter-class>com.bs.filter.TransactionFilter</filter-class>
