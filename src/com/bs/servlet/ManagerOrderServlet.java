@@ -9,11 +9,13 @@ import com.bs.service.impl.OrderServiceImpl;
 import com.bs.util.JdbcUtils;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+@WebServlet("/manager/order")
 public class ManagerOrderServlet extends BaseServlet {
     private final IOrderService orderService = new OrderServiceImpl();
 

@@ -4,32 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <servlet>
-        <servlet-name>UserServlet</servlet-name>
-        <servlet-class>com.bs.servlet.UserServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/user</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>ClientServlet</servlet-name>
-        <servlet-class>com.bs.servlet.ClientServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ClientServlet</servlet-name>
-        <url-pattern>/client</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>BookServlet</servlet-name>
-        <servlet-class>com.bs.servlet.BookServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>BookServlet</servlet-name>
-        <url-pattern>/manager/book</url-pattern>
-    </servlet-mapping>
-
+    <!-- 配置验证码 -->
     <servlet>
         <servlet-name>KaptchaServlet</servlet-name>
         <servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
@@ -37,33 +12,6 @@
     <servlet-mapping>
         <servlet-name>KaptchaServlet</servlet-name>
         <url-pattern>/code.jpg</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>CartServlet</servlet-name>
-        <servlet-class>com.bs.servlet.CartServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CartServlet</servlet-name>
-        <url-pattern>/cart</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ClientOrderServlet</servlet-name>
-        <servlet-class>com.bs.servlet.ClientOrderServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ClientOrderServlet</servlet-name>
-        <url-pattern>/order</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>ManagerOrderServlet</servlet-name>
-        <servlet-class>com.bs.servlet.ManagerOrderServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>ManagerOrderServlet</servlet-name>
-        <url-pattern>/manager/order</url-pattern>
     </servlet-mapping>
 
     <!--用户登录过滤-->

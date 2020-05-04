@@ -7,6 +7,7 @@ import com.bs.util.WebUtils;
 import com.google.gson.Gson;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 import static com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY;
 
+@WebServlet("/user")
 public class UserServlet extends BaseServlet {
 
     private IUserService userService = new UserServiceImpl();

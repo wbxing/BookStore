@@ -7,11 +7,13 @@ import com.bs.service.impl.BookServiceImpl;
 import com.bs.util.WebUtils;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+@WebServlet("/manager/book")
 public class BookServlet extends BaseServlet {
     IBookService bookService = new BookServiceImpl();
 
