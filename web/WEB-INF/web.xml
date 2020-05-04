@@ -44,7 +44,6 @@
     </filter>
     <filter-mapping>
         <filter-name>TransactionFilter</filter-name>
-        <!--过滤所有请求-->
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 

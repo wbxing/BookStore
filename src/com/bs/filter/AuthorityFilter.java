@@ -12,7 +12,6 @@ public class AuthorityFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         User user = (User) httpServletRequest.getSession().getAttribute("user");
-
         // 判断用户是否登录
         if (user == null) {
             httpServletRequest.getRequestDispatcher("/pages/user/login.jsp").forward(request, response);
@@ -27,11 +26,9 @@ public class AuthorityFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
     }
 
     @Override
     public void destroy() {
-
     }
 }
