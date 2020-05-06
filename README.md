@@ -11,3 +11,9 @@ An online bookstore project implemented in Java
 > [libraries](web/WEB-INF/lib/libraries.txt) \
 > [resources](resources/readme.txt) \
 > [sql](sql/sql.sql)
+
+## 使用步骤
+1. 安装依赖环境
+1. 下载[sql](sql/sql.sql)
+1. 运行 SQL
+1. 启动
